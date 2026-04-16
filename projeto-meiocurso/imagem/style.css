@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #0f0f0f; /* Preto profundo */
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* 2. Cabeçalho (Header) */
+header {
+    background-color: #000000;
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 4px solid #e50914; /* Vermelho vibrante */
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #e50914;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+/* 3. Menu de Navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #e50914;
+    text-shadow: 0 0 10px rgba(229, 9, 20, 0.5);
+}
+
+/* 4. Conteúdo Principal (Main) */
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+section {
+    margin-bottom: 50px;
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    color: #e50914;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+}
+
+/* 5. Artigo de Destaque */
+article h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+article p {
+    margin-bottom: 20px;
+    color: #ccc;
+}
+
+article img {
+    display: block;
+    max-width: 100%; /* Ajusta a imagem ao tamanho do card */
+    height: auto;
+    border-radius: 8px;
+    margin: 0 auto;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* 6. Lista de Últimas Notícias */
+section ul {
+    list-style: none;
+}
+
+section ul li {
+    padding: 15px 0;
+    border-bottom: 1px solid #333;
+    color: #ddd;
+}
+
+section ul li:last-child {
+    border-bottom: none;
+}
+
+section ul li strong {
+    color: #e50914;
+    margin-right: 10px;
+}
+
+/* 7. Rodapé (Footer) */
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #000;
+    color: #666;
+    font-size: 0.9rem;
+    border-top: 1px solid #333;
+}
+
+/* Responsividade para Celular */
+@media (max-width: 768px) {
+    header h1 { font-size: 2rem; }
+    nav ul { gap: 15px; }
+    main { margin: 20px auto; }
+}
